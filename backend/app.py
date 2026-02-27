@@ -22,10 +22,10 @@ def create_app():
     db.init_app(app)
     
     # Register blueprints
-    app.register_blueprint(auth_bp, url_prefix='/api/auth')
-    app.register_blueprint(book_bp, url_prefix='/api/books')
-    app.register_blueprint(student_bp, url_prefix='/api/students')
-    app.register_blueprint(circ_bp, url_prefix='/api/circulation')
+    app.register_blueprint(auth_bp, url_prefix='/auth')
+    app.register_blueprint(book_bp, url_prefix='/books')
+    app.register_blueprint(student_bp, url_prefix='/students')
+    app.register_blueprint(circ_bp, url_prefix='/circulation')
     
     # Generic error handlers
     @app.errorhandler(404)
