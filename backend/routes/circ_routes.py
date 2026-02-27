@@ -3,7 +3,7 @@ from models import db, IssuedBook, Book, User
 from auth import admin_required
 from datetime import date, timedelta
 
-circ_bp = Blueprint('circulation', __name__, url_prefix='/api/circulation')
+circ_bp = Blueprint('circulation', __name__)
 
 @circ_bp.route('', methods=['GET'])
 @admin_required

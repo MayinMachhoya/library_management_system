@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from models import db, Book
 from auth import admin_required
 
-book_bp = Blueprint('books', __name__, url_prefix='/api/books')
+book_bp = Blueprint('books', __name__)
 
 @book_bp.route('', methods=['GET'])
 def get_books():

@@ -2,7 +2,7 @@ from flask import Blueprint, request, jsonify
 from models import db, User, IssuedBook
 from auth import token_required, admin_required
 
-student_bp = Blueprint('students', __name__, url_prefix='/api/students')
+student_bp = Blueprint('students', __name__)
 
 @student_bp.route('/me', methods=['GET'])
 @token_required
