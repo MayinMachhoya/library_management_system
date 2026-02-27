@@ -25,7 +25,7 @@ def create_app():
     app.register_blueprint(auth_bp, url_prefix='/auth')
     app.register_blueprint(book_bp, url_prefix='/books')
     app.register_blueprint(student_bp, url_prefix='/students')
-    app.register_blueprint(circ_bp, url_prefix='/circ')
+    app.register_blueprint(circ_bp, url_prefix='/circulation')
     
     # Generic error handlers
     @app.errorhandler(404)
