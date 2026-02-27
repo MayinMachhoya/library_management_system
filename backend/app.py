@@ -38,8 +38,7 @@ def create_app():
         return jsonify({'error': 'InternalServerError', 'message': 'An unexpected error occurred'}), 500
         
     return app
-
- app = create_app()
+app = create_app()
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
