@@ -55,3 +55,4 @@ The frontend uses React (Vite plugin), TailwindCSS, React-Router, and Axios.
 - **Password:** `AdminSecure2026!`
 
 *(These were generated per the PRD via `backend/init_db.py`)*
+
