@@ -18,7 +18,7 @@ def create_app():
     app.config.from_object(Config)
     
     # Initialize extensions
-    CORS(app)
+    CORS(app, resources={r"/*": {"origins": "*"}})
     db.init_app(app)
     
     # Register blueprints
